@@ -20,7 +20,7 @@ minimumVersion = "4.7.8"
 versionInvalid = (LooseVersion(conda.__version__) < LooseVersion(minimumVersion))
 
 if versionInvalid:
-    print('Setup requires conda version ' + minimumVersion + ' or higher.')
+    print(f'Setup requires conda version {minimumVersion} or higher.')
     print('You can use the command "conda update conda" to upgrade conda.')
 
 exit(versionInvalid)
